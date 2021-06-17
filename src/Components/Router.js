@@ -1,11 +1,11 @@
 import React from "react";
 import { HashRouter as Router, Route, Redirect, Switch } from "react-router-dom";
-import Home from "../Routes/Home";
-import TV from "../Routes/TV";
-import Search from "../Routes/Search";
+import Home from "../Routes/Home/HomePresenter";
+import TV from "../Routes/TV/TVPresenter";
+import Search from "../Routes/Search/SearchPresenter";
 import Header from "./Header"
 
-export default () => (
+const Navi = () => (
     <Router>
         <>
             <Header />
@@ -17,4 +17,6 @@ export default () => (
             </Switch>
         </>
     </Router>
-)
+);
+
+export default Navi;
