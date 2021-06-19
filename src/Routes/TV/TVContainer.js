@@ -9,7 +9,7 @@ export default class extends React.Component {
         airingToday: null,
         error: null,
         loading: true,
-    }
+    };
 
     async componentDidMount() {
         try{
@@ -24,7 +24,7 @@ export default class extends React.Component {
         } finally{
             this.setState({ loading: false })
         }
-    }
+    };
 
     render() {
         const { topRated, popular, airingToday, error, loading } = this.state;

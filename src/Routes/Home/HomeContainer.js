@@ -11,7 +11,7 @@ export default class extends React.Component{
         popular: null,
         error: null,
         loading: true,
-    }
+    };
 
     async componentDidMount() {
         try{
@@ -33,7 +33,7 @@ export default class extends React.Component{
                 loading: false,
             });
         }
-    }
+    };
 
     render() {
         const { nowPlaying, upcoming, popular, error, loading } = this.state;
